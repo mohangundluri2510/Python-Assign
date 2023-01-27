@@ -14,9 +14,19 @@ We have traversed the board's borders and applied BFS to all of the "O" entries 
 In order to build the BFS, we employed queues. Each time we removed an entry from the queue, we traversed its surrounded elements and added them to the queue and the process repeats.
 
 ## 2. Depth First Search
-Depth-first search is an algorithm for searching in data structures. The algorithm starts at the some arbitrary node and explores as far as possible along each branch before backtracking. 
+Depth-first search is an algorithm for searching in data structures. The algorithm starts at the some arbitrary node and explores as far as possible along each branch before backtracking.
+
 #### Implementation of DFS
 In order to determine which "O" entries are connected to it and therefore cannot be captured by "X" because one of its sides is occupied by "O," we traversed the board's borders and performed DFS to all of the "O" entries in the borders. We then marked all of these types of entries to "Y" and transformed them to "O," whereas other entries were made to "X" because they could be captured.
+
+## Time and Space Complexity
+1. Breadth First Search
+Time Complexity : O(m*n)
+Space Complexity : O(m*n)
+2. Depth First Search
+Time Complexity : O(m*n)
+Space Complexity : O(m*n)
+where m,n are rows and columns in board.
 
 ## Test run
 ### Image of Breadth First Search and Depth First Search
