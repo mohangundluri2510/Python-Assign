@@ -4,7 +4,7 @@ from collections import deque
 
 def solve(board):
     # finding length of the column of the board
-    m=len(board)
+    l=len(board)
     # Finding len of the row of the board  
     n=len(board[0])
 
